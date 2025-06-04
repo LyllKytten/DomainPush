@@ -15,7 +15,37 @@
     color: #4B0082;
 }
 
-.e-h1_purple {
-    align-text: center;
+.e-h_center_purple {
+    text-align: center;
+    color: #4B0082;
+}
+
+.e-h_right_purple {
+    text-align: center;
+    color: #4B0082;
+}
+
+.e-h_left_purple {
+    text-align: center;
+    color: #4B0082;
+}
+
+.e-ol_square_purple {
+    list-style-type: square;
+    color: #4B0082;
+}
+
+.e-li_square_purple {
+    list-style-type: square;
+    color: #4B0082;
+}
+
+.e-text_underline_purple {
+    color: #4B0082;
+    text-decoration: underline;
+}
+
+.e-text_left_purple {
+    text-align: left;
     color: #4B0082;
 }
