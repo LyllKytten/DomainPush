@@ -1,5 +1,3 @@
-
-
 .e-p_center_purple {
     text-align: center;
     color: #4B0082;
@@ -40,6 +38,11 @@
     color: #4B0082;
 }
 
+.e-li_square_green {
+    list-style-type: square;
+    color: green;
+}
+
 .e-text_underline_purple {
     color: #4B0082;
     text-decoration: underline;
@@ -48,4 +51,145 @@
 .e-text_left_purple {
     text-align: left;
     color: #4B0082;
+}
+
+.e-color_purple_by_hex {
+    color: #4B0082;
+}
+
+.e-color_purple_by_rgb {
+    color: rgb(75, 0, 130);
+}
+
+.e-color_purple_by_rgba_with_05 {
+    color: rgba(75, 0, 130, 0.5);
+}
+
+.e-color_purple_by_rgba_with_1 {
+    color: rgba(75, 0, 130, 1);
+}
+
+.e-color_purple_by_hsl {
+    color: hsl(275, 100%, 25%)
+}
+
+.e-color_purple_by_hsla_with_05 {
+    color: hsl(275, 100%, 25%, 0.5)
+}
+
+.e-color_purple_by_hsla_with_1 {
+    color: hsl(275, 100%, 25%, 1)
+}
+
+.e-color_purple_by_name {
+    color: blueviolet;
+}
+
+.e-div_left {
+    text-align: left;
+}
+
+.e-div_color_blue {
+    color: blue;
+}
+
+.e-font_style_italic_normal {
+    font-style: italic;
+    font-weight: normal;
+    color: #4B0082;
+}
+
+.e-font_style_italic_bold {
+    font-style: italic;
+    font-weight: bold;
+    color: #4B0082;
+}
+
+.e-font_style_italic_bolder {
+    font-style: italic;
+    font-weight: bolder;
+    color: #4B0082;
+}
+
+.e-font_style_italic_lighter {
+    font-style: italic;
+    font-weight: lighter;
+    color: #4B0082;
+}
+
+.edu-nsw-act-cursive-font {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.edu-nsw-act-hand-pre-font {
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h4 {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h5 {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h6 {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }

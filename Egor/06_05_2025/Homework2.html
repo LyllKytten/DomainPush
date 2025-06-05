@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Homework</title>
+  <link rel="stylesheet" href="/../../css/EStyles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="edu-nsw-act-cursive-font">
+    <h1 class="e-h_center_purple"> Book : computer networks sixth edition E. TANENBAUM</h1>
+
+    <p class="e-p_center_purple" style="font-family: Edu NSW ACT Hand Pre, cursive">
+      The link layer can provide various services. Their set may differ in different protocols. As a rule, there are the following options, which we will consider further in more detail:
+    </p>
+
+    <ol class="e-p_center_purple" style="align-items: center;">
+      <li style="font-family: Edu NSW ACT Hand Pre, cursive; color: purple"> The service is without confirmations and without establishing a connection. </li>
+      <li style="font-family: Edu NSW ACT Hand Pre, cursive; color: purple"> A service with confirmation and without establishing a connection. </li>
+      <li style="font-family: Edu NSW ACT Hand Pre, cursive; color: purple"> A confirmation service focused on establishing a connection. </li>
+    </ol>
+
+    <p> А как передвинуть цифры к центру ? </p>
+
+    <p class="e-p_center_purple" style="font-family: Edu NSW ACT Hand Pre, cursive">
+      The algorithm of the service without confirmations and without establishing a connection is that the control device sends independent frames to the receiver, which does not respond with a confirmation of receipt. A good example of a link layer providing this class of service is Ethernet. Connections are not established in advance and are not terminated after transmission. If any frame is lost due to line noise, then no attempt is made at the channel level to restore it. This class of services is acceptable with a very low error rate. In this case, the task of recovering lost data can be solved at the upper levels. In addition, such services are suitable for real-time traffic, such as voice or video data, because in this case it is better to receive data in a distorted form than with a long delay.
+    </p>
+
+    <p class="e-p_center_purple" style="font-family: Edu NSW ACT Hand Pre, cursive">
+      The next step towards improving reliability is a service with confirmations and without establishing a connection. When using it, the connection is also not established, but the receipt of each frame is confirmed. As a result, the sender knows whether the frame has reached its destination in one piece or has been lost. If no confirmation is received within the set time interval, the frame is sent again. This service is useful when transmitting over unreliable channels, in particular wireless. A good example is the protocol 802.11 (Wi-Fi).
+    </p>
+
+    <p class="e-p_center_purple" style="font-family: Edu NSW ACT Hand Pre, cursive">
+      It should probably be noted that providing confirmations at the channel level is more an optimization than a requirement. The network layer can always send a packet and wait for confirmation of its delivery. If the sender does not receive the confirmation within the specified time period, the message can be sent again. The problem is that this strategy often proves ineffective. Frames usually have a strict maximum length limit related to hardware requirements, and there is also a certain delay in delivery. These parameters are unknown at the network level. Messages can be divided into, say, 10 frames. On average, two of them will get lost on the way. It can take a very long time to transfer data using this method. If you confirm the receipt of individual frames, then errors can be corrected directly and much faster. In reliable channels (for example, fiber-optic), the overhead of channel-level confirmation will only reduce bandwidth, but for wireless communications (which are non-secure in nature), such costs will pay off and reduce the transmission time of long messages.
+    </p>
+
+    <p class="e-p_center_purple" style="font-family: Edu NSW ACT Hand Pre, cursive">
+      The most complex service provided by the link layer is the connection-oriented confirmation service. When using this method, the source and receiver establish a connection before exchanging data. Each frame sent is numbered, and the link layer ensures that all frames are actually received on the other side of the line, that each frame is received only once, and that they are all received in the correct order. In this way, a connection-oriented service provides the network layer processes with the equivalent of a reliable bit stream. It is suitable for long-term unreliable connections such as satellite channel or long-distance telephone connection. In an unconnected service, it is possible that if confirmation is lost, the same frame will be sent (and received). several times. This is an unnecessary load on the channel and an unreasonable waste of bandwidth.
+    </p>
+
+    <p class="e-p_center_purple" style="font-family: Edu NSW ACT Hand Pre, cursive">
+      When using a connection-oriented service, data transmission consists of three phases. In the first phase, a connection occurs, with both sides initializing the variables and counters necessary to keep track of which frames have already been received and which have not yet been received. In the second phase, data frames are transmitted. Finally, in the third, the connection is terminated, freeing up all the variables, buffers, and other resources used to maintain it.
+    </p>
+
+  </div>
+
+</body>
