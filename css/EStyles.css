@@ -1,41 +1,41 @@
 .e-p_center_purple {
     text-align: center;
-    color: #4B0082;
+    color: #FF00FF;
 }
 
 .e-p_right_purple {
     text-align: right;
-    color: #4B0082;
+    color: #FF00FF;
 }
 
 .e-p_left_purple {
     text-align: left;
-    color: #4B0082;
+    color: #FF00FF;
 }
 
 .e-h_center_purple {
     text-align: center;
-    color: #4B0082;
+    color: #FF00FF;
 }
 
 .e-h_right_purple {
     text-align: right;
-    color: #4B0082;
+    color: #FF00FF;
 }
 
 .e-h_left_purple {
     text-align: left;
-    color: #4B0082;
+    color: #FF00FF;
 }
 
 .e-ol_square_purple {
     list-style-type: square;
-    color: #4B0082;
+    color: #FF00FF;
 }
 
 .e-li_square_purple {
     list-style-type: square;
-    color: #4B0082;
+    color: #FF00FF;
 }
 
 .e-li_square_green {
@@ -44,17 +44,17 @@
 }
 
 .e-text_underline_purple {
-    color: #4B0082;
+    color: #FF00FF;
     text-decoration: underline;
 }
 
 .e-text_left_purple {
     text-align: left;
-    color: #4B0082;
+    color: #FF00FF;
 }
 
 .e-color_purple_by_hex {
-    color: #4B0082;
+    color: #FF00FF;
 }
 
 .e-color_purple_by_rgb {
@@ -96,25 +96,25 @@
 .e-font_style_italic_normal {
     font-style: italic;
     font-weight: normal;
-    color: #4B0082;
+    color: #FF00FF;
 }
 
 .e-font_style_italic_bold {
     font-style: italic;
     font-weight: bold;
-    color: #4B0082;
+    color: #FF00FF;
 }
 
 .e-font_style_italic_bolder {
     font-style: italic;
     font-weight: bolder;
-    color: #4B0082;
+    color: #FF00FF;
 }
 
 .e-font_style_italic_lighter {
     font-style: italic;
     font-weight: lighter;
-    color: #4B0082;
+    color: #FF00FF;
 }
 
 .edu-nsw-act-cursive-font {
@@ -136,6 +136,7 @@ div {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    color: #FF00FF;
 }
 
 p {
@@ -143,6 +144,7 @@ p {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    color: #FF00FF;
 }
 
 h1 {
@@ -150,6 +152,7 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    color: #FF00FF;
 }
 
 h2 {
@@ -157,6 +160,7 @@ h2 {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    color: #FF00FF;
 }
 
 h3 {
@@ -164,6 +168,7 @@ h3 {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    color: #FF00FF;
 }
 
 h4 {
@@ -171,6 +176,7 @@ h4 {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    color: #FF00FF;
 }
 
 h5 {
@@ -178,6 +184,7 @@ h5 {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    color: #FF00FF;
 }
 
 h6 {
@@ -185,6 +192,7 @@ h6 {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    color: #FF00FF;
 }
 
 a {
@@ -192,4 +200,5 @@ a {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    color: #FF00FF;
 }
