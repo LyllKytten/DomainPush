@@ -1,15 +1,17 @@
 var FIO1, FIO2, FIO3;
 
 function isValid(str) {
-    return typeof str === "string"
+    return typeof str === "string" && str !== "" && isNaN(str);
 }
 
-while (!isValid(FIO1) || !isValid(FIO2) || !isValid(FIO3)) {
+do {
     FIO1 = prompt("Please enter a valid last name");
     FIO2 = prompt("Please enter a valid first name");
     FIO3 = prompt("Please enter a valid surname");
 }
- 
+while (!isValid(FIO1) || !isValid(FIO2) || !isValid(FIO3)) {
+}
+
 var age = 0;
 
 while (!Number.isInteger(age) || age===0) {
