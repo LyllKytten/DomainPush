@@ -20,7 +20,7 @@ while (!isValidFio(userLastName)) {
 let ageString = prompt("Введите Ваш возраст. Возраст должен быть целым числом больше 0", "17");
 let age = Number(ageString);
 while (isNaN(age) || !Number.isInteger(age) || age < 1) {
-    ageString = prompt(`Возраст должен быть целым числом больше 0. Вы ввели ${age}\nВведите Ваш возраст`, "17");
+    ageString = prompt(`Возраст должен быть целым числом больше 0. Вы ввели ${ageString}\nВведите Ваш возраст`, "17");
     age = Number(ageString);
 }
 
