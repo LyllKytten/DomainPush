@@ -14,7 +14,8 @@ function countSum(array) {
 }
 
 let test_array = [ 5, 7, [ 4, [2], 8, [1,3], 2 ], [ 9, [] ], 1, 8 ];
-let test_array2 = [5,0,,5];
+let test_array2 = [5,0,5];
 
-// alert(`Counted sum is ${countSum(test_array2)}`);
+alert(`Counted sum for array [ 5, 7, [ 4, [2], 8, [1,3], 2 ], [ 9, [] ], 1, 8 ] is ${countSum(test_array)}\nCounted sum for array [5,0,5] is ${countSum(test_array2)}`);
+console.log(countSum(test_array));
 console.log(countSum(test_array2));
