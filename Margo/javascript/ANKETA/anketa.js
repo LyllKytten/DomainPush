@@ -2,9 +2,9 @@ function isValidFio(str) {
     return typeof str === "string" && str
 }
 
-let userName = prompt('Введите Ваше имя', 'Серафима');
-while(!isValidFio(userName)) {
-    userName = prompt(`Имя не может быть пустым и должно быть текстом. Вы ввели ${userName ? userName : "пустую строку"}.\nВведите Ваше имя`, 'Серафима');
+let user_Name = prompt('Введите Ваше имя', 'Серафима');
+while(!isValidFio(user_Name)) {
+    user_Name = prompt(`Имя не может быть пустым и должно быть текстом. Вы ввели ${user_Name ? user_Name : "пустую строку"}.\nВведите Ваше имя`, 'Серафима');
 }
 
 let userSurname = prompt("Введите Вашу фамилию", "Долмацкая");
@@ -40,7 +40,7 @@ if (!isMan && age >= 58)
 let sex = isMan ? "мужской" : "женский";
 let pension = isOld ? "да" : "нет";
 
-text = `ваше ФИО: ${userSurname} ${userName} ${userLastName}
+text = `ваше ФИО: ${userSurname} ${user_Name} ${userLastName}
 ваш возраст в годах: ${age}
 ваш возраст в днях: ${ageInDays}
 через 5 лет вам будет: ${ageInFiveYears}
