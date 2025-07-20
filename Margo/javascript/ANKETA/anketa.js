@@ -4,23 +4,23 @@ function isValidFio(str) {
 
 let userName = prompt('Введите Ваше имя', 'Серафима');
 while(!isValidFio(userName)) {
-    userName = prompt(`Имя не может быть пустым и должно быть текстом. Вы ввели ${name}.\nВведите Ваше имя`, 'Серафима');
+    userName = prompt(`Имя не может быть пустым и должно быть текстом. Вы ввели ${name ? name : "пустую строку"}.\nВведите Ваше имя`, 'Серафима');
 }
 
 let userSurname = prompt("Введите Вашу фамилию", "Долмацкая");
 while (!isValidFio(userSurname)) {
-    userSurname = prompt(`Фамилия не может быть пустой и должна быть текстом. Вы ввели ${surname}.\nВведите Вашу фамилию`, "Долмацкая");
+    userSurname = prompt(`Фамилия не может быть пустой и должна быть текстом. Вы ввели ${userSurname ? userSurname : "пустую строку"}.\nВведите Вашу фамилию`, "Долмацкая");
 }
 
 let userLastName = prompt("Введите Ваше отчество", "Платоновна");
 while (!isValidFio(userLastName)) {
-    userLastName = prompt(`Отчество не может быть пустым и должно быть текстом. Вы ввели ${lastName}.\nВведите Ваше отчество`, "Платоновна");
+    userLastName = prompt(`Отчество не может быть пустым и должно быть текстом. Вы ввели ${userLastName ? userLastName : "пустую строку"}.\nВведите Ваше отчество`, "Платоновна");
 }
 
 let ageString = prompt("Введите Ваш возраст. Возраст должен быть целым числом больше 0", "17");
 let age = Number(ageString);
 while (isNaN(age) || !Number.isInteger(age) || age < 1) {
-    ageString = prompt(`Возраст должен быть целым числом больше 0. Вы ввели ${ageString}\nВведите Ваш возраст`, "17");
+    ageString = prompt(`Возраст должен быть целым числом больше 0. Вы ввели ${ageString ? ageString : "пустую строку"}\nВведите Ваш возраст`, "17");
     age = Number(ageString);
 }
 
