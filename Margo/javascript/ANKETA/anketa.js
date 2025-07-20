@@ -4,7 +4,7 @@ function isValidFio(str) {
 
 let user_Name = prompt('Введите Ваше имя', 'Серафима');
 while(!isValidFio(user_Name)) {
-    user_Name = prompt(`Имя не может быть пустым и должно быть текстом. Вы ввели ${user_Name ? user_Name : "пустую строку"}.\nВведите Ваше имя`, 'Серафима');
+    user_Name = prompt(`Имя не может быть пустым и должно быть тeкстом. Вы ввели ${user_Name ? user_Name : "пустую строку"}.\nВведите Ваше имя`, 'Серафима');
 }
 
 let userSurname = prompt("Введите Вашу фамилию", "Долмацкая");
