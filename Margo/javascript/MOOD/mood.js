@@ -11,7 +11,7 @@ function mood(colorsCount) {
         do {
             n = randomDiap(1,7);
         } while (n in numbersOfColors)
-        numbersOfColors[n] = colors[n];
+        numbersOfColors[n] = 1;
         console.log(colors[n]);
     }
 }
