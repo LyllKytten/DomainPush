@@ -2,9 +2,6 @@
 function countSum(array) {
     let sum = 0;
     for (let el of array) {
-
-        if (!el)
-            continue;
         if (Array.isArray(el))
             sum += countSum(el);
         else
