@@ -1,6 +1,6 @@
 
 function countVowels(line) {
-    const vowels = "аоуыэяёюие"; // check whether those are all
+    const vowels = "аоуыэяёюие";
     let count = 0;
     for (let letter of line.toLowerCase()) {
         if (vowels.includes(letter))
@@ -11,10 +11,10 @@ function countVowels(line) {
 
 
 
-let line = prompt("Введите пожалуйста строку, в которой нудно считать гласные")
+let line = prompt("Введите пожалуйста строку, в которой нужно считать гласные")
 // let line = "фыввааппрооллджцуушкимлы";
 while (!line) {
-    line = prompt(`Вы ввели ${line ? line : "пустую строку"}, что не подходит.\nВведите пожалуйста строку, в которой нудно считать гласные`)
+    line = prompt(`Вы ввели ${line ? line : "пустую строку"}, что не подходит.\nВведите пожалуйста строку, в которой нужно считать гласные`)
 }
 
 let result = countVowels(line);
