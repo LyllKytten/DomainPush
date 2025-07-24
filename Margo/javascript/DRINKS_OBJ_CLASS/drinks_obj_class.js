@@ -6,14 +6,14 @@ class ObjStorageClass {
     addValue(key, value) { this.data[key.toLowerCase()] = value; }
 
     getValue(key) {
-        if (key.toLowerCase() in this.data)
+        if (this.data.hasOwnProperty(key.toLowerCase()))
             return this.data[key.toLowerCase()];
         else
             return undefined;
     }
 
     deleteValue(key) {
-        if (key.toLowerCase() in this.data) {
+        if (this.data.hasOwnProperty(key.toLowerCase())) {
             delete this.data[key.toLowerCase()];
             return true;
         }

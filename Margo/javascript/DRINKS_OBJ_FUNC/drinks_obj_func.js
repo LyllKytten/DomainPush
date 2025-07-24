@@ -6,14 +6,14 @@ function ObjStorageFunc() {
     self.addValue = function(key, value) { self.data[key.toLowerCase()] = value; }
 
     self.getValue = function(key) {
-        if (key.toLowerCase() in self.data)
+        if (self.data.hasOwnProperty(key.toLowerCase()))
             return self.data[key.toLowerCase()];
         else
             return undefined;
     };
 
     self.deleteValue = function(key) {
-        if (key.toLowerCase() in self.data) {
+        if (self.data.hasOwnProperty(key.toLowerCase())) {
             delete self.data[key.toLowerCase()];
             return true;
         }
