@@ -52,7 +52,7 @@ function getDrinkInfo() {
     if (!drink)
         alert("В нашем хранилище нет такого напитка...");
     else {
-        let {isAlcoholic, recipe} = drink;
+        let {alco:isAlcoholic, recipe} = drink;
         let info = `напиток: ${name} \nалкогольный: ${isAlcoholic ? "да" : "нет"} \nрецепт приготовления: \n${recipe}`;
         alert(info);
     }
