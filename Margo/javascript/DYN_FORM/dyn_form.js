@@ -34,7 +34,11 @@ const transformDict = {
 }
 
 function showForm(formId, formNumber) {
-    let formEl = document.getElementById(formId);
+    let body = document.body;
+    let formEl = document.createElement("form");
+    formEl.setAttribute("id", formId);
+    formEl.setAttribute("method", "post");
+    formEl.setAttribute("action", "https://fe.it-academy.by/TestForm.php");
     let formToBuild = formNumber === 1 ? formDef1 : formDef2;
 
     let newTable = document.createElement("table");
@@ -137,6 +141,7 @@ function showForm(formId, formNumber) {
     newTable.appendChild(tableBody);
     formEl.appendChild(newTable);
     formEl.appendChild(document.createElement("hr"));
+    body.appendChild(formEl);
 }
 
 
