@@ -1,0 +1,39 @@
+.marck-script-regular {
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rubik-doodle-shadow-regular {
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sevillana-regular {
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.span-class-number {
+    font-family: 'Sevillana', serif;
+    font-weight: 400;
+    font-style: normal;
+    /*font-family: 'Sevillana', serif;*/
+    font-size: 20px
+}
+
+.span-task-number {
+    font-family: "Marck Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    /*font-family: 'Marck Script', serif;*/
+    font-size: 20px
+}
