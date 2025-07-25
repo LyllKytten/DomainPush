@@ -212,10 +212,12 @@ export function useFormDef1() {
     upgrader()
     formDef = formDef1
     createForm()
+    formDef = []
 }
 
 export function useFormDef2() {
     upgrader()
     formDef = formDef2
     createForm()
+    formDef = []
 }
