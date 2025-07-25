@@ -45,7 +45,6 @@ function showForm(formId, formNumber) {
     for (let el of formToBuild) {
         let newRow = document.createElement("tr");
         let firstCol = document.createElement("td");
-        firstCol.style.width = "25%";
         let secondCol, secondEl;
         if (el.kind !== ("memo" && "submit")) {
             firstCol.innerText = el.label;
@@ -88,7 +87,6 @@ function showForm(formId, formNumber) {
                 newRow.appendChild(secondCol);
 
                 break;
-            // case "check":
 
             case "memo":
                 firstCol.setAttribute("colspan", "2");
@@ -101,6 +99,7 @@ function showForm(formId, formNumber) {
                 newRow.appendChild(firstCol);
 
                 break;
+
             case "submit":
                 
                 let newBtn = document.createElement("input");
@@ -111,6 +110,7 @@ function showForm(formId, formNumber) {
                 newRow.appendChild(firstCol);
 
                 break;
+
             default:
                 if (el.kind.includes("text") || el.kind.includes("number")) {
                     secondEl = document.createElement("input");
@@ -132,56 +132,6 @@ function showForm(formId, formNumber) {
         }
 
         tableBody.appendChild(newRow);
-
-        // if (transformDict[el.kind] !== ("textarea" || "submit")) {
-        //     let newRow = document.createElement("tr");
-        //
-        //     let firstCol = document.createElement("td");
-        //     firstCol.innerText = el.label;
-        //
-        //     let secondCol = document.createElement("td");
-        //     let secondEl;
-        //     if (el.kind.includes("text" || "number")) {
-        //         secondEl = document.createElement("input");
-        //         secondEl.setAttribute("type", transformDict[el.kind.type]);
-        //         secondEl.style.cssText = `width: ${transformDict[el.kind.width]}`;
-        //     }
-        //     else {
-        //         secondEl = document.createElement("input")
-        //         secondEl.setAttribute("type", transformDict[el.kind]);
-        //     }
-        //
-        //     secondEl.setAttribute("name", el.name);
-        //     secondCol.appendChild(secondEl);
-        //
-        //     newRow.appendChild(firstCol);
-        //     newRow.appendChild(secondCol);
-        // }
-        // else if (transformDict[el.kind] === "textarea") {
-        //     let newRow = document.createElement("tr");
-        //
-        //     let newCol = document.createElement("td");
-        //     firstCol.setAttribute("colspan", "2");
-        //     firstCol.innerHTML = `${el.label}<br>`;
-        //     let newArea = document.createElement(transformDict[el.kind]);
-        //     newArea.setAttribute("name", el.name);
-        //     firstCol.appendChild(newArea);
-        //
-        //     newRow.appendChild(firstCol);
-        // }
-        //
-        // else {
-        //     let newRow = document.createElement("tr");
-        //     let newCol = document.createElement("td");
-        //     let newBtn = document.createElement("input");
-        //     newBtn.setAttribute("type", transformDict[el.kind]);
-        //     newBtn.setAttribute("value", el.caption);
-        //
-        //     firstCol.appendChild(newBtn);
-        //     newRow.appendChild(firstCol);
-        //
-        // }
-
     }
 
     newTable.appendChild(tableBody);
