@@ -72,6 +72,7 @@ function showForm(formId, formNumber) {
                 newRow.appendChild(secondCol);
 
                 break;
+
             case "radio":
                 secondEl = document.createElement("div");
                 // secondEl.setAttribute("name", el.name);
@@ -105,7 +106,6 @@ function showForm(formId, formNumber) {
                 break;
 
             case "submit":
-                
                 let newBtn = document.createElement("input");
                 newBtn.setAttribute("type", transformDict[el.kind]);
                 newBtn.setAttribute("value", el.caption);
