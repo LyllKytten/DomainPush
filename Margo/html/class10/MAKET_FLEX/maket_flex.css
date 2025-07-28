@@ -55,6 +55,7 @@ h3.article_heading {
 img.football_image {
     width: 250px;
     margin: 0 10px 0 0;
+    float: left;
 }
 
 
