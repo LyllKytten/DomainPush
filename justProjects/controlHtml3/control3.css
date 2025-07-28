@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.e-p_center_purple {
+    text-align: center;
+    color: #FF00FF;
+}
+
+.e-p_right_purple {
+    text-align: right;
+    color: #FF00FF;
+}
+
+.e-p_left_purple {
+    text-align: left;
+    color: #FF00FF;
+}
+
+.e-h_center_purple {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    text-align: center;
+    color: #FF00FF;
+}
+
+.e-h_right_purple {
+    text-align: right;
+    color: #FF00FF;
+}
+
+.e-h_left_purple {
+    text-align: left;
+    color: #FF00FF;
+}
+
+.e-ol_square_purple {
+    list-style-type: square;
+    color: #FF00FF;
+}
+
+.e-li_square_purple {
+    list-style-type: square;
+    color: #FF00FF;
+}
+
+.e-li_square_green {
+    list-style-type: square;
+    color: green;
+}
+
+.e-text_underline_purple {
+    color: #FF00FF;
+    text-decoration: underline;
+}
+
+.e-text_left_purple {
+    text-align: left;
+    color: #FF00FF;
+}
+
+.e-color_purple_by_hex {
+    color: #FF00FF;
+}
+
+.e-color_purple_by_rgb {
+    color: rgb(75, 0, 130);
+}
+
+.e-color_purple_by_rgba_with_05 {
+    color: rgba(75, 0, 130, 0.5);
+}
+
+.e-color_purple_by_rgba_with_1 {
+    color: rgba(75, 0, 130, 1);
+}
+
+.e-color_purple_by_hsl {
+    color: hsl(275, 100%, 25%)
+}
+
+.e-color_purple_by_hsla_with_05 {
+    color: hsl(275, 100%, 25%, 0.5)
+}
+
+.e-color_purple_by_hsla_with_1 {
+    color: hsl(275, 100%, 25%, 1)
+}
+
+.e-color_purple_by_name {
+    color: blueviolet;
+}
+
+.e-div_left {
+    text-align: left;
+}
+
+.e-div_color_blue {
+    color: blue;
+}
+
+.e-font_style_italic_normal {
+    font-style: italic;
+    font-weight: normal;
+    color: #FF00FF;
+}
+
+.e-font_style_italic_bold {
+    font-style: italic;
+    font-weight: bold;
+    color: #FF00FF;
+}
+
+.e-font_style_italic_bolder {
+    font-style: italic;
+    font-weight: bolder;
+    color: #FF00FF;
+}
+
+.e-font_style_italic_lighter {
+    font-style: italic;
+    font-weight: lighter;
+    color: #FF00FF;
+}
+
+.edu-nsw-act-cursive-font {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.edu-nsw-act-hand-pre-font {
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.e-urls_container {
+    background-color: #F0E68C;
+    font-weight: bold;
+    max-width: 215px;
+    min-width: 215px;
+    width: 215px;
+    padding-left: 15px;
+    vertical-align: top;
+}
+
+.e-div_urls_container {
+    /*background-color: #F0E68C;*/
+    font-weight: bold;
+    max-width: 200px;
+    min-width: 200px;
+    width: 200px;
+    padding-left: 15px;
+    vertical-align: top;
+    float: left;
+}
+
+.e-urls_cont_text {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.e-urls {
+    text-align: left;
+    list-style-type: disc;
+    padding-left: 30px;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.e-article {
+    text-align: left;
+    vertical-align: top;
+}
+
+.e-art_text {
+    margin: 0px 0px 20px 20px;
+    font-weight: lighter;
+    padding-right: 20px ;
+}
+
+.e-div_head_and_end {
+    text-align: center;
+    padding: 10px;
+    background-color: #ACD7E5;
+    color: #4439FE;
+    font-size: 30px;
+    font-weight: bold;
+    clear: both;
+}
+
+.e-div_article {
+    text-align: left;
+    margin-left: 215px;
+}
+
+.e-table_head_and_end {
+     background-color: #ACD7E5;
+     color: #4439FE;
+     text-align: center;
+     padding: 10px 0px 10px 0px;
+     font-size: 30px;
+     font-weight: bold;
+     clear: both;
+ }
+
+.e-div_art_text {
+    margin: 0px 0px 20px 20px;
+    font-weight: lighter;
+    padding-left: 20px;
+    padding-right: 20px ;
+}
+
+.e-art_title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.e-main_div {
+
+}
+
+.e-div_body {
+    height: 100%;
+    background: url('ball.png') repeat-y right top, url('/../../AllFiles/othershit/background.gif') repeat-y left top;
+}
+
+.e-blocator {
+    clear: both;
+}
+
+.e-filler {
+    background-color: #F0E68C;
+    height: 100%;
+    width: 200px;
+}
+
+.e-background_urls_container {
+    /*border: 1px solid white;*/
+}
+
+.vertical-fl {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.vertical-gr {
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 56px 1fr 56px;
+    grid-template-areas:
+            'header header'
+            'urls textes'
+            'ender ender';
+}
+
+.head_grid {
+    text-align: center;
+    padding: 10px;
+    background-color: #ACD7E5;
+    color: #4439FE;
+    font-size: 30px;
+    font-weight: bold;
+    clear: both;
+    grid-area: header;
+}
+
+.urls-grid {
+    /*background-color: #F0E68C;*/
+    font-weight: bold;
+
+    min-width: 200px;
+    width: 200px;
+    padding-left: 15px;
+    vertical-align: top;
+    float: left;
+    grid-area: urls;
+}
+
+.article-grid {
+    text-align: left;
+    /*grid-area: textes;*/
+}
+
+.end-grid {
+    text-align: center;
+    padding: 10px;
+    background-color: #ACD7E5;
+    color: #4439FE;
+    font-size: 30px;
+    font-weight: bold;
+    clear: both;
+    grid-area: ender;
+}
+
+.flextest {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.holst_grid {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas: 'horizontal vertical';
+}
+
+.img_good {
+    float: left; margin: 0px 20px 20px 20px;
+}
+
+.mod_p {
+    margin-top: 0px; margin-bottom: 0px; padding-bottom: 20px; padding-left: 0px
+}
+
+.displ {
+    display: none;
+}
+
+@media all and (max-width: 40em)
+{
+    .flextest {
+        flex-direction: column-reverse;
+    }
+
+    .e-div_body {
+        background: transparent;
+    }
+
+    .head_grid {
+        display: none;
+    }
+
+    .end-grid {
+        display: none;
+    }
+
+    .img_good {
+        float: none;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .mod_p {
+        padding-bottom: 0;
+    }
+
+    .e-div_art_text {
+        margin: 0 0 20px 0;
+        padding: 0;
+    }
+
+    .e-urls {
+        display: none;
+    }
+
+    .displ {
+        display: block;
+    }
+
+    .urls-grid {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/*
+div {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #FF00FF;
+}
+
+p {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #FF00FF;
+}
+
+h1 {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #FF00FF;}
+
+h2 {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #FF00FF;}
+
+h3 {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #FF00FF;}
+
+h4 {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #FF00FF;
+   }
+
+h5 {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #FF00FF;}
+
+h6 {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #FF00FF;}
+
+a {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #FF00FF;}
+
+ */
