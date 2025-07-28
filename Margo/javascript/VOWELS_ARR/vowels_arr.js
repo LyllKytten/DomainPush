@@ -9,14 +9,14 @@ function countVowelsForEach(line) {
 }
 
 function countVowelsFilter(line) {
-    const vowels = Array.from("аоуыэяёюие"); // redo on array this and line as well
+    const vowels = Array.from("аоуыэяёюие");
     line = Array.from(line.toLowerCase());
 
     return (line.filter((letter) => vowels.includes(letter))).length;
 }
 
 function countVowelsReduce(line) {
-    const vowels = Array.from("аоуыэяёюие"); // redo on array this and line as well
+    const vowels = Array.from("аоуыэяёюие");
     line = Array.from(line.toLowerCase());
 
     return line.reduce((acc, letter) => {return vowels.includes(letter) ? acc + 1 : acc}, 0);
