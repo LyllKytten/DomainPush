@@ -283,12 +283,7 @@ html, body {
 .urls-grid {
     /*background-color: #F0E68C;*/
     font-weight: bold;
-
-    min-width: 200px;
-    width: 200px;
     padding-left: 15px;
-    vertical-align: top;
-    float: left;
     grid-area: urls;
 }
 
