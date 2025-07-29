@@ -37,7 +37,6 @@ p.options_menu {
 
 div.content_div {
     flex-grow: 2;
-    /*padding: 0 0 0 0;*/
     background-color: white;
     padding: 20px 0px 0px 20px;
     text-align: left;
@@ -77,6 +76,7 @@ img.football_image {
         float: none;
         width: 100%;
         height: auto;
+        margin: 0 0 0 0;
     }
 
     div.menu_div {
