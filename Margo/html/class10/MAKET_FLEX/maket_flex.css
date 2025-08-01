@@ -1,0 +1,94 @@
+div.head_and_end_div {
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    background-color: #ADD8E6;
+}
+
+p.head_and_end_text {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 24px;
+    color: blue;
+    margin: 0px 0px 0px 0px;
+}
+
+div.main_div {
+    display: flex;
+    flex-direction: row;
+}
+
+div.menu_div {
+    flex: 0 0 200px;
+    /*flex-basis: 200px;*/
+    background-color: #F0E68C;
+    text-align: left;
+    margin: 0 0 0 0;
+    padding: 20px 0px 0px 10px;
+}
+
+ul.list_links {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+p.options_menu {
+    display: none;
+}
+
+div.content_div {
+    flex-grow: 2;
+    background-color: white;
+    padding: 20px 0px 0px 20px;
+    text-align: left;
+    background: url('/../../../AllFiles/football/ball.png') top right repeat-y;
+}
+
+h3.article_heading {
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin: 0px 0px 15px 0px;
+}
+
+img.football_image {
+    width: 250px;
+    margin: 0 10px 0 0;
+    float: left;
+}
+
+
+
+@media all and (max-width: 40em) {
+    div.head_and_end_div {
+        display: none;
+    }
+
+    div.main_div {
+        flex-direction: column-reverse;
+    }
+
+    div.content_div {
+        background: transparent;
+    }
+
+    img.football_image {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 0 0 0 0;
+    }
+
+    div.menu_div {
+        background: transparent;
+    }
+
+    ul.list_links {
+        display: none;
+    }
+
+    p.options_menu {
+        display: block;
+    }
+
+}
