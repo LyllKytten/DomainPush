@@ -12,17 +12,21 @@
 
 <script>
 
-    // let imgs = document.getElementsByTagName('img');
-    // for (let image of imgs) {
-    //
-    //     const rect = currentImage.getBoundingClientRect();
-    //     image.style.position = 'absolute';
-    //     image.style.left = rect.left + window.pageXOffset + "px";
-    //     image.style.top = rect.top + window.pageYOffset + "px";
-    //     image.addEventListener('mousedown', mouseDown, false);
-    //     image.addEventListener('mousemove', mouseMove, false);
-    //     image.addEventListener('mouseup', mouseUp, false);
-    // }
+    window.onload = function () {
+        let imgs = document.getElementsByTagName('img');
+        for (let i = imgs.length - 1; i >= 0; i--) {
+
+            const rect = imgs[i].getBoundingClientRect();
+            imgs[i].style.position = 'absolute';
+            imgs[i].style.left = rect.left + window.scrollX + "px";
+            imgs[i].style.top = rect.top + window.scrollY + "px";
+            //     image.addEventListener('mousedown', mouseDown, false);
+            //     image.addEventListener('mousemove', mouseMove, false);
+            //     image.addEventListener('mouseup', mouseUp, false);
+        }
+    };
+
+
     document.addEventListener('mousedown', mouseDown, false);
     document.addEventListener('mousemove', mouseMove, false);
     document.addEventListener('mouseup', mouseUp, false);
@@ -43,7 +47,7 @@
         currentImage = eo.target;
         console.log('currentImage', currentImage);
 
-        currentImage.style.position = 'absolute';
+        // currentImage.style.position = 'absolute';
 
         const rect = currentImage.getBoundingClientRect();
         mouseShiftX = eo.pageX - rect.left;
