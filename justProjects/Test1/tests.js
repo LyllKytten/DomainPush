@@ -89,6 +89,9 @@ function objForm(obj, isSucsed=false, isError=true, labCapB=true) {
 
 export function createForm() {
 
+    let formEl = document.createElement("form");
+    formEl.setAttribute("method", "post");
+    formEl.setAttribute("action", "https://fe.it-academy.by/TestForm.php");
     const table = document.createElement("table");
     table.style.borderCollapse = "collapse";
 
@@ -96,7 +99,8 @@ export function createForm() {
         createTable(obj, table)
     }
 
-    document.body.appendChild(table)
+    formEl.appendChild(table);
+    document.body.appendChild(formEl);
 }
 
 function createTable(obj, table) {
