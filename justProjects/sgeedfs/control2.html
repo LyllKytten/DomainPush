@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>drag&amp;drop</title>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+        }
+        img {
+            user-drag: none;
+            -webkit-user-drag: none;
+            cursor: grab;
+        }
+    </style>
+</head>
+<body>
+<img src="http://fe.it-academy.by/Sites/0000007/sax.jpg">
+<img src="http://fe.it-academy.by/Sites/0000007/Yin_and_Yang.png" width="100" style="vertical-align: 20px">
+<img src="http://fe.it-academy.by/Sites/0000007/Man-and-woman.png" width="150">
+<img src="http://fe.it-academy.by/Sites/0000007/No_smoking.png" style="padding-left: 50px">
+
+<script>
+    (() => {
+        const images = document.getElementsByTagName('img');
+
+        // for (let img of images) {
+        //     const rect = img.getBoundingClientRect();
+        //     img.style.position = 'absolute';
+        //     img.style.left = rect.left + window.pageXOffset + 'px';
+        //     img.style.top = rect.top + window.pageYOffset + 'px';
+        // }
+
+
+        let dragImg = null;
+        let offsetX = 0;
+        let offsetY = 0;
+        let maxZIndex = 1;
+
+        document.addEventListener('mousedown', function (e) {
+            if (e.target.tagName === 'IMG') {
+                e.preventDefault();
+
+                dragImg = e.target;
+                dragImg.style.cursor = 'move';
+
+                dragImg.style.position = 'absolute';
+
+                const rect = dragImg.getBoundingClientRect();
+                offsetX = e.clientX - rect.left;
+                offsetY = e.clientY - rect.top;
+
+                dragImg.style.zIndex = ++maxZIndex;
+            }
+        });
+
+        document.addEventListener('mousemove', function (e) {
+            if (dragImg) {
+                dragImg.style.left = (e.pageX - offsetX) + 'px';
+                dragImg.style.top = (e.pageY - offsetY) + 'px';
+            }
+        });
+
+        document.addEventListener('mouseup', function () {
+            if (dragImg) {
+                dragImg.style.cursor = 'grab';
+                dragImg = null;
+            }
+        });
+    })();
+</script>
+</body>
+</html>

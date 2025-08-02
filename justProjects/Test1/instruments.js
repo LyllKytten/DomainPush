@@ -173,7 +173,7 @@ function modificatedTable() {
     rowBut.appendChild(colB_1);
     table.appendChild(rowBut);
 
-    // Четвёртая строка
+    // Четвёртая строка 
     let row4 = document.createElement("tr");
     let col4_1 = document.createElement("td");
     col4_1.colSpan = 2;
