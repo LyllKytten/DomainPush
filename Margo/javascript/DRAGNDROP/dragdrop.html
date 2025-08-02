@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>drag&amp;drop</title>
+</head>
+<body style='min-height: 100vh'>
+    <img src='http://fe.it-academy.by/Sites/0000007/sax.jpg'>
+    <img src='http://fe.it-academy.by/Sites/0000007/Yin_and_Yang.png' width=100 style='vertical-align: 20px'>
+    <img src='http://fe.it-academy.by/Sites/0000007/Man-and-woman.png' width=150>
+    <img src='http://fe.it-academy.by/Sites/0000007/No_smoking.png' style='padding-left: 50px'>
+
+<script>
+
+    // let imgs = document.getElementsByTagName('img');
+    // for (let image of imgs) {
+    //
+    //     const rect = currentImage.getBoundingClientRect();
+    //     image.style.position = 'absolute';
+    //     image.style.left = rect.left + window.pageXOffset + "px";
+    //     image.style.top = rect.top + window.pageYOffset + "px";
+    //     image.addEventListener('mousedown', mouseDown, false);
+    //     image.addEventListener('mousemove', mouseMove, false);
+    //     image.addEventListener('mouseup', mouseUp, false);
+    // }
+    document.addEventListener('mousedown', mouseDown, false);
+    document.addEventListener('mousemove', mouseMove, false);
+    document.addEventListener('mouseup', mouseUp, false);
+
+    let currentImage = null;
+
+    let mouseShiftX = 0;
+    let mouseShiftY = 0;
+
+    let zindex = 1;
+
+    function mouseDown(eo) {
+        eo = eo || window.event;
+        // eo.stopPropagation();
+        eo.preventDefault();
+        if (eo.target.tagName !== 'IMG') return ;
+
+        currentImage = eo.target;
+        console.log('currentImage', currentImage);
+
+        currentImage.style.position = 'absolute';
+
+        const rect = currentImage.getBoundingClientRect();
+        mouseShiftX = eo.pageX - rect.left;
+        mouseShiftY = eo.pageY - rect.top;
+
+        currentImage.style.zIndex = `${++zindex}`;
+    }
+
+
+    function mouseUp(eo) {
+        eo = eo || window.event;
+        // eo.stopPropagation();
+        eo.preventDefault();
+
+        prevImage = currentImage;
+        currentImage = null;
+    }
+
+
+    function mouseMove(eo) {
+        eo = eo || window.event;
+        // eo.stopPropagation();
+        eo.preventDefault();
+        if (currentImage) {
+            currentImage.style.left = (eo.pageX - mouseShiftX) + "px";
+            currentImage.style.top = (eo.pageY - mouseShiftY) + "px";
+            currentImage.style.cursor = "grabbing";
+        }
+    }
+
+</script>
+
+
+</body>
+</html>
