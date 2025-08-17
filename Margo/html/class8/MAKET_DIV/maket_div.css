@@ -1,0 +1,96 @@
+.head_and_end_div {
+    text-align: center;
+    padding: 10px 0 10px 0;
+    background-color: #ADD8E6;
+}
+
+p.head_and_end_text {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 24px;
+    color: blue;
+    margin: 0 0 0 0;
+}
+
+.MainDiv {
+    background-color: #F0E68C;
+}
+
+.MenuDiv {
+    float: left;
+    width: 175px;
+    padding: 20px 0 0 10px;
+}
+
+.BigContentDiv {
+    margin-left: 200px;
+    background-color: white;
+}
+
+.ActualContentDiv {
+    padding: 20px 10px 0 20px;
+    background: url('/AllFiles/MargoImages/ball.png') top right repeat-y;
+}
+
+.PeopleImage {
+    width: 250px;
+    margin: 0 10px 0 0;
+    float: left;
+}
+
+.MobileMenu {
+    display: none;
+}
+
+div.enterTheClub {
+    background-color: lightgreen;
+    border: green solid 1px;
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    position: fixed;
+    top: 38px; right: 15px;
+}
+
+a.linkEnterClub {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media all and (max-width: 35em) {
+    div.MainDiv {
+        background-color: white;
+    }
+
+    div.head_and_end_div {
+        display: none;
+    }
+
+    div.MenuDiv {
+        display: none;
+    }
+
+    div.MobileMenu {
+        display: block;
+    }
+
+    div.BigContentDiv {
+        margin: 0 0 0 0;
+    }
+
+    div.ActualContentDiv {
+        padding: 0 0 0 0;
+        background: transparent;
+    }
+
+    img.PeopleImage {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    div.MainDiv {
+        padding: 20px 20px 20px 20px;
+    }
+
+}

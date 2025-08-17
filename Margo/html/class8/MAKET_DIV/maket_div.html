@@ -1,54 +1,17 @@
-<style>
-    .c5_head_and_end_div {
-        text-align: center;
-        padding: 10px 0px 10px 0px;
-        background-color: #ADD8E6;
-    }
-
-    .c5_head_and_end_text {
-        text-transform: uppercase;
-        font-family: sans-serif;
-        font-size: 24px;
-        color: blue;
-        margin: 0px 0px 0px 0px;
-    }
-
-    .c5_menu_div {
-        width: 200px;
-        float: left;
-        /*padding: 20px 0px 0px 10px;*/
-        margin: 0 0 0 0;
-        text-align: left;
-    }
-
-    .c5_article_div {
-        padding: 20px 0px 0px 20px;
-        text-align: left;
-        background: url('/AllFiles/MargoImages/ball.png') top right repeat-y;
-    }
-
-    .c5_article_heading {
-        text-align: center;
-        font-weight: bold;
-        font-family: sans-serif;
-        text-transform: uppercase;
-        margin: 0px 0px 15px 0px;
-    }
-</style>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Блочный макет</title>
+    <title>Адаптивный макет</title>
+    <link rel="stylesheet" href="maket_div.css" type="text/css" >
+    <meta name="viewport" content="width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1">
 </head>
-<body style="margin: 0px 0px 0px 0px;">
-    <div class="c5_head_and_end_div">
-        <p class="c5_head_and_end_text">Привет участникам соревнований!</p>
+<body style="margin: 0 0 0 0;">
+    <div class="head_and_end_div">
+      <p class="head_and_end_text">Привет участникам соревнований!</p>
     </div>
-    <div style="background-color: #F0E68C;">
-        <div class="c5_menu_div">
-            <div style="padding: 20px 0px 0px 10px;">
+    <div class="MainDiv">
+        <div class="MenuDiv" >
             <span style="font-weight: bold">Виды спорта:</span>
             <ul style="list-style-type: disc; padding-left: 20px">
                 <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="конькобежный спорт">конькобежный спорт</a></li>
@@ -67,11 +30,10 @@
                 <li><a href="https://ru.wikipedia.org/wiki/%D0%93%D0%B8%D0%BC%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D0%BA%D0%B0" title="гимнастика">гимнастика</a></li>
             </ul>
         </div>
-        </div>
-        <div style="margin-left: 200px; padding: 0 0 0 0; background-color: white;">
-            <div class="c5_article_div">
-                <h3 class="c5_article_heading">Футбол</h3>
-                <img src="/AllFiles/MargoImages/football_image.jpg" title="кубок" alt="Люди, держащие футбольный кубок" style="width: 250px; margin: 0 10px 0 0; float: left">
+        <div class="BigContentDiv">
+            <div class="ActualContentDiv">
+            <h3 style="text-align: center; font-weight: bolder; margin: 0 0 16px 0; font-family: sans-serif; text-transform: uppercase;">Футбол</h3>
+                <img class="PeopleImage" src="/AllFiles/MargoImages/football_image.jpg" title="кубок" alt="Люди, держащие футбольный кубок">
                 <p>
                     Футбол &mdash; командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или
                     другими частями тела (кроме рук) большее количество раз, чем команда соперника.
@@ -86,12 +48,35 @@
                 <div style="clear: both;"></div>
             </div>
         </div>
-
-        <div style="clear: both;"></div>
+        <div class="MobileMenu" >
+            <p style="font-weight: bold">Виды спорта: </p>
+            <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="конькобежный спорт">конькобежный спорт</a>
+            <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD" title="биатлон">биатлон</a>
+            <a href="https://uk.wikipedia.org/wiki/%D0%A4%D1%83%D1%82%D0%B1%D0%BE%D0%BB" title="футбол">футбол</a>
+            <a href="https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D1%8C%D0%B1%D0%B0_%D0%B8%D0%B7_%D0%BB%D1%83%D0%BA%D0%B0" title="стрельба из лука">стрельба из лука</a>
+            <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8B%D0%B6%D0%BE%D0%BA_%D0%B2_%D0%B4%D0%BB%D0%B8%D0%BD%D1%83" title="прыжки в длину">прыжки в длину</a>
+            <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8B%D0%B6%D0%BE%D0%BA_%D0%B2_%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D1%83" title="прыжки в высоту">прыжки в высоту</a>
+            <a href="https://ru.wikipedia.org/wiki/%D0%A5%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9" title="хоккей">хоккей</a>
+            <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D1%81%D0%BA%D0%B5%D1%82%D0%B1%D0%BE%D0%BB" title="баскетбол">баскетбол</a>
+            <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB" title="волейбол">волейбол</a>
+            <a href="https://ru.wikipedia.org/wiki/%D0%A4%D0%B8%D0%B3%D1%83%D1%80%D0%BD%D0%BE%D0%B5_%D0%BA%D0%B0%D1%82%D0%B0%D0%BD%D0%B8%D0%B5" title="фигурное катание">фигурное катание</a>
+            <a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BD%D0%BD%D0%B8%D1%81" title="теннис">теннис</a>
+            <a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BB%D0%B0%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" title="плавание">плавание</a>
+            <a href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D0%BD%D0%B4%D0%B1%D0%BE%D0%BB" title="гандбол">гандбол</a>
+            <a href="https://ru.wikipedia.org/wiki/%D0%93%D0%B8%D0%BC%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D0%BA%D0%B0" title="гимнастика">гимнастика</a>
+        </div>
     </div>
-
-    <div style="text-align: center; padding: 10px 0px 10px 0px; background-color: #ADD8E6;">
-        <p class="c5_head_and_end_text">Главное не победа, а участие!</p>
+    <div class="head_and_end_div">
+        <p class="head_and_end_text">Главное не победа, а участие!</p>
+    </div>
+    <div class="enterTheClub">
+        <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D1%83%D0%B1" class="linkEnterClub">ВСТУПИТЬ В КЛУБ</a>
     </div>
 </body>
 </html>
+
+<style>
+
+
+
+</style>

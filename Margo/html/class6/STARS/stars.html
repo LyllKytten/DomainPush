@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stars</title>
+</head>
+<body>
+    <div class="Stars">
+        <div class="Star"> </div>
+        <div class="Star"> </div>
+        <div class="Star"> </div>
+        <div class="Star"> </div>
+        <div class="Star"> </div>
+    </div>
+
+</body>
+</html>
+
+<style>
+    div.Stars:hover div.Star{
+      background: url("/AllFiles/MargoImages/star1.png") no-repeat left top;
+    }
+
+    div.Star {
+      background: url("/AllFiles/MargoImages/star0.png") no-repeat left top;
+      min-width: 75px;
+      min-height: 78px;
+      display: inline-block;
+    }
+
+    div.Star:hover ~ div.Star {
+      background: url("/AllFiles/MargoImages/star0.png") no-repeat left top;
+    }
+</style>

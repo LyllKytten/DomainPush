@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Макет формы</title>
+</head>
+<body>
+    <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+    <form method="post" action="http://fe.it-academy.by/TestForm.php" target="_blank" >
+        <div>
+            <label for="title">Название статьи:</label>
+            <div class="titleInput">
+                <input type="text" id="title" name="title"/>
+            </div>
+        </div>
+
+        <div>
+            <label for="rubric">Рубрика:</label>
+            <div class="rubricInput">
+                <select id="rubric" name="rubric">
+                  <option value=1>компьютерная техника</option>
+                  <option value=2>графика и дизайн</option>
+                  <option value=3 selected>программирование</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <label for="radios" >Публикация:</label>
+            <div class="radios">
+                <label><input type="radio" id="radios" name="publicationPlace" value=1 />на сайте</label>
+                <label><input type="radio" name="publicationPlace" value=2 />в журнале</label>
+                <label><input type="radio" name="publicationPlace" value=3 />на сайте и в журнале</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="comments">Разрешить комментарии:</label>
+            <div class="checkboxInput">
+                <input type="checkbox" id="comments" name="comments" checked />
+            </div>
+        </div>
+
+        <div>
+            <label for="articleText">Текст статьи:</label>
+            <div>
+              <textarea id="articleText" name="articleText" ></textarea>
+            </div>
+        </div>
+
+        <input type="submit" value="Опубликовать" />
+    </form>
+</body>
+</html>
+
+<style>
+    @media all and (min-width: 30em) {
+        div.titleInput, div.rubricInput, div.radios {
+            margin-left: 150px;
+        }
+
+        label {
+            float: left;
+            clear: left;
+        }
+
+        div.radios label {
+            display: inline;
+            clear: none;
+            float: none;
+        }
+
+        select {
+            width: 175px !important;
+        }
+    }
+
+    .radios label {
+        display: block;
+    }
+
+    input[type="text"], textarea, select{
+        width: 100%;
+    }
+
+    .checkboxInput {
+        display: inline-block;
+      margin: 0 0 0 0;
+    }
+
+    div {
+        margin: 5px 5px 5px 0;
+    }
+</style>

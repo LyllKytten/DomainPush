@@ -14,15 +14,17 @@
 
     window.onload = function () {
         let imgs = document.getElementsByTagName('img');
+        let imgs_coords = Array(imgs.length);
         for (let i = imgs.length - 1; i >= 0; i--) {
 
             const rect = imgs[i].getBoundingClientRect();
+            imgs_coords[i] = rect;
+        }
+
+        for (let i in imgs) {
             imgs[i].style.position = 'absolute';
-            imgs[i].style.left = rect.left + window.scrollX + "px";
-            imgs[i].style.top = rect.top + window.scrollY + "px";
-            //     image.addEventListener('mousedown', mouseDown, false);
-            //     image.addEventListener('mousemove', mouseMove, false);
-            //     image.addEventListener('mouseup', mouseUp, false);
+            imgs[i].style.left = imgs_coords[i].left + window.scrollX + "px";
+            imgs[i].style.top = imgs_coords[i].top + window.scrollY + "px";
         }
     };
 
@@ -40,14 +42,11 @@
 
     function mouseDown(eo) {
         eo = eo || window.event;
-        // eo.stopPropagation();
         eo.preventDefault();
         if (eo.target.tagName !== 'IMG') return ;
 
         currentImage = eo.target;
         console.log('currentImage', currentImage);
-
-        // currentImage.style.position = 'absolute';
 
         const rect = currentImage.getBoundingClientRect();
         mouseShiftX = eo.pageX - rect.left;
@@ -62,7 +61,6 @@
         // eo.stopPropagation();
         eo.preventDefault();
 
-        prevImage = currentImage;
         currentImage = null;
     }
 

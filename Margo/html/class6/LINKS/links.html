@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Links</title>
+</head>
+<body>
+    <div class="Links_just_a" >
+        <a href="" >первая ссылка</a>
+        <a href="" >вторая ссылка</a>
+        <a href="" >третья ссылка</a>
+        <a href="" >четвертая ссылка</a>
+        <a href="" >пятая ссылка</a>
+    </div>
+
+    <div class="Links_a_divs" >
+        <div> <a href="" >первая ссылка</a></div>
+        <div> <a href="" >вторая ссылка</a></div>
+        <div> <a href="" >третья ссылка</a></div>
+        <div> <a href="" >четвертая ссылка</a></div>
+        <div> <a href="" >пятая ссылка</a></div>
+    </div>
+
+    <div class="Links_table" >
+      <table>
+        <tr>
+          <td> <a href="" >первая ссылка</a> </td>
+          <td> <a href="" >вторая ссылка</a> </td>
+          <td> <a href="" >третья ссылка</a> </td>
+          <td> <a href="" >четвертая ссылка</a> </td>
+          <td> <a href="" >пятая ссылка</a> </td>
+        </tr>
+      </table>
+    </div>
+
+</body>
+</html>
+
+<style>
+
+    a {
+      color: green;
+      vertical-align: middle;
+    }
+
+    a:hover {
+      color: red;
+    }
+
+    div.Links_just_a{
+      margin-bottom: 30px;
+    }
+
+    div.Links_just_a a {
+      border-right: 3px solid red;
+      padding: 5px 5px 5px 0;
+    }
+
+    div.Links_just_a a:last-of-type {
+      border: none;
+    }
+
+    div.Links_just_a a:first-of-type {
+      margin-left: 0;
+    }
+
+    div.Links_a_divs {
+      margin-bottom: 30px;
+
+    }
+
+    div.Links_a_divs div {
+      display: inline-block;
+      border-left: 3px solid red;
+      vertical-align: middle;
+      padding: 5px 0 5px 5px;
+    }
+
+    div.Links_a_divs div:first-child {
+      border-left: none;
+      padding-left: 0;
+    }
+
+    div.Links_table td {
+      text-align: center;
+      border-right: 3px solid red;
+      padding: 5px 5px 5px 5px;
+    }
+
+    div.Links_table td:last-child {
+      border-right: none;
+    }
+
+    div.Links_table td:first-child {
+      padding-left: 0;
+    }
+
+</style>

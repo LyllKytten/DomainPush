@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maket abs</title>
+</head>
+<body>
+    <p>
+      Я к вам пишу — чего же боле? Что я могу еще сказать? Теперь, я знаю, в вашей воле Меня презреньем наказать. Но вы,
+      к моей несчастной доле Хоть каплю жалости храня, Вы не оставите меня. Сначала я молчать хотела; Поверьте: моего стыда
+      Вы не узнали б никогда, Когда б надежду я имела Хоть редко, хоть в неделю раз В деревне нашей видеть вас.
+    </p>
+    <div class="imgContainer" style=" height: 423px;">
+<!--        <div class="imgContainer">-->
+        <img src="/AllFiles/MargoImages/biohazard.png" alt="biohazard" class="biohazard"/>
+        <img src="/AllFiles/MargoImages/Man-and-woman.png" alt="Man and woman" class="man_and_woman"/>
+        <img src="/AllFiles/MargoImages/Yin_and_Yang.png" alt="Yin and Yang" class="yin_and_yang"/>
+        <img src="/AllFiles/MargoImages/No_smoking.png" alt="No smoking" class="no_smoking"/>
+<!--        </div>-->
+    </div>
+    <p>
+        Чтоб только слышать ваши речи, Вам слово молвить, и потом Все думать, думать об одном И день и ночь до новой встречи.
+    </p>
+</body>
+</html>
+
+<style>
+
+    .imgContainer {
+        position: relative;
+        height: 423px;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .biohazard {
+        position: absolute;
+        vertical-align: middle;
+    }
+
+    .man_and_woman {
+        position: absolute;
+        right: 0; top: 0;
+    }
+
+    .yin_and_yang {
+        position: absolute;
+        bottom: 0;
+        left: 100px;
+    }
+
+    .no_smoking {
+        position: absolute;
+        left: 72px; top: 83px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .biohazard:hover, .man_and_woman:hover, .yin_and_yang:hover {
+        z-index: 3;
+    }
+</style>
