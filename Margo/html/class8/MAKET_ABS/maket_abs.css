@@ -1,0 +1,35 @@
+.imgContainer {
+    position: relative;
+    height: 423px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.biohazard {
+    position: absolute;
+    vertical-align: middle;
+}
+
+.man_and_woman {
+    position: absolute;
+    right: 0; top: 0;
+}
+
+.yin_and_yang {
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}
+
+.no_smoking {
+    position: absolute;
+    left: 72px; top: 83px;
+}
+
+p {
+    margin: 0;
+}
+
+.biohazard:hover, .man_and_woman:hover, .yin_and_yang:hover {
+    z-index: 3;
+}
