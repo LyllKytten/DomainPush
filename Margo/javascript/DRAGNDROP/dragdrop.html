@@ -21,7 +21,7 @@
             imgs_coords[i] = rect;
         }
 
-        for (let i in imgs) {
+        for (let i = 0; i < imgs.length; i++) {
             imgs[i].style.position = 'absolute';
             imgs[i].style.left = imgs_coords[i].left + window.scrollX + "px";
             imgs[i].style.top = imgs_coords[i].top + window.scrollY + "px";
@@ -46,7 +46,6 @@
         if (eo.target.tagName !== 'IMG') return ;
 
         currentImage = eo.target;
-        console.log('currentImage', currentImage);
 
         const rect = currentImage.getBoundingClientRect();
         mouseShiftX = eo.pageX - rect.left;
@@ -58,7 +57,6 @@
 
     function mouseUp(eo) {
         eo = eo || window.event;
-        // eo.stopPropagation();
         eo.preventDefault();
 
         currentImage = null;
@@ -67,7 +65,6 @@
 
     function mouseMove(eo) {
         eo = eo || window.event;
-        // eo.stopPropagation();
         eo.preventDefault();
         if (currentImage) {
             currentImage.style.left = (eo.pageX - mouseShiftX) + "px";
