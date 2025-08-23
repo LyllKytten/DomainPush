@@ -1507,6 +1507,11 @@ h5 {
     font-size: 0.875rem;
 }
 
+.first-entry-meta {
+    display: flex;
+    flex-direction: row;
+}
+
 .one-meta {
     margin-right: 15px;
 }
