@@ -12,20 +12,11 @@ function sendMessage() {
     window.location.href = `mailto:${emailTo}?subject=${subject}&body=${body}`;
 }
 
-function filterContent(category) {
-    let items = document.querySelectorAll('.blog');
 
-    items.forEach((item) => {
-        if (category === "all") {
-            item.style.display = "flex";
-        } else if (item.classList.contains(category)) {
-            item.style.display = "flex";
-            document.getElementById('category').textContent = "Category: " + category;
-            document.getElementById('category').style.display = "flex";
-        } else {
-            item.style.display = "none";
-        }
-    })
-}
+const menuBtn = document.getElementById('menuToggle');
+const sidebar = document.getElementById('sidebar');
 
-filterContent('all');
+menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle('active');
+    sidebar.classList.toggle('active');
+});

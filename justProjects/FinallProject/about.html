@@ -4,26 +4,41 @@
     <meta charset="UTF-8">
     <title>Worky lite - архитектурная современная тема</title>
     <link rel="stylesheet" href="main.styles.css">
+    <link rel="stylesheet" href="sidebar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="site-header container">
+<section id="sidebar-container">
+    <button class="menu-btn" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="sidebar" id="sidebar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+    </div>
+</section>
+<div class="site-header container">
     <div class="space-between-content">
         <div class="logo">
             <a rel="home" href="home.html">
                 <img src="source/logo.png" alt="">
             </a>
         </div>
-        <nav>
+        <nav id="nav">
             <ul class="menu">
-                <li class="menu-item"><a href="home.html">HOME</a></li>
-                <li class="menu-item"><a href="about.html" aria-current="page">ABOUT</a></li>
+                <li class="menu-item"><a href="home.html" aria-current="page">HOME</a></li>
+                <li class="menu-item"><a href="about.html">ABOUT</a></li>
                 <li class="menu-item"><a href="services.html">SERVICES</a></li>
                 <li class="menu-item"><a href="blog.html">BLOG</a></li>
             </ul>
         </nav>
     </div>
-    </div>
+</div>
     <section id="content">
             <div class="breadcrumbs">
                 <div class="breadcrumbs">
@@ -233,3 +248,4 @@
 </html>
 
 <script src="js/animations.js"></script>
+<script src="js/actions.js"> </script>

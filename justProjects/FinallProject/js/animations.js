@@ -16,6 +16,9 @@ window.addEventListener("load", () => {
     window.scrollTo(0, 0);
 });
 
+
+
+
 const boxes = document.querySelectorAll('.little-notice, .header, .separator, #first-crop, #second-crop, #third-crop, #fp, #hp, #da, #yii');
 
     const observer = new IntersectionObserver(entries => {
@@ -28,6 +31,9 @@ const boxes = document.querySelectorAll('.little-notice, .header, .separator, #f
     }, {threshold: 0.1});
 
     boxes.forEach(box => observer.observe(box));
+
+
+
 
 document.querySelectorAll(".accordion-header").forEach(header => {
     header.addEventListener("click", () => {
@@ -62,6 +68,8 @@ document.querySelectorAll(".accordion-header").forEach(header => {
         }
     });
 });
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const boxes = document.querySelectorAll('#fp, #hp, #da, #yii');

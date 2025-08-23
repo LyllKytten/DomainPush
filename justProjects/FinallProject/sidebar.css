@@ -1,0 +1,193 @@
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px; /* справа */
+    background: #f7931e;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu-btn span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+/* Анимация крестика */
+.menu-btn.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+.menu-btn.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Сайдбар */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* спрятано справа */
+    width: 250px;
+    height: 100%;
+    background: #333;
+    transition: 0.3s ease;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    right: 0; /* выезжает */
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    background: #444;
+    color: #f7931e;
+}
+
+@media (max-width: 600px) {
+    #sidebar-container {
+        display: block;
+
+    }
+
+    #nav {
+        display: none;
+    }
+
+    .max-width-1025 {
+        flex-direction: column;
+    }
+
+    .max-width-1025 .title-about-text.about-text p {
+        padding: 0 15px 0 15px;
+    }
+
+    .project {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .crop {
+        width: auto;
+        transition: none !important;
+        animation: none !important;
+        margin-top: 15px;
+    }
+
+    #first-crop {
+        transform: translateX(0);
+    }
+
+    #third-crop {
+        transform: translateX(0);
+    }
+
+    .rate {
+        display: none;
+    }
+
+    .advantages {
+        display: none;
+    }
+
+    #portfolio {
+        margin: 0 0 60px 0;
+    }
+
+    #portfolio .title-about-text #at1-2 {
+        margin: 15px 0 0 0;
+    }
+
+    .images-container {
+        flex-direction: column;
+        margin: 0 15px 0 15px;
+    }
+
+    #imgs-container-2 {
+        margin: 0 15px 0 15px;
+    }
+
+    .image {
+        width: 100%;
+        margin: 15px 0 0 0;
+    }
+
+    .image.last-one {
+        margin-bottom: 0;
+    }
+
+    #partners {
+        flex-direction: column;
+    }
+
+    .partners-container {
+        flex-direction: column;
+        max-height: none;
+    }
+
+    #pc2 {
+        margin: 0;
+    }
+
+    #pc3 {
+        margin: 0;
+    }
+
+    #last-one-pc1 {
+        margin: 0;
+    }
+
+    #last-one-pc2 {
+        margin: 0;
+    }
+
+    #header-container {
+        margin-left: 15px;
+    }
+
+    #lets-get-in-touch {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    #sidebar-container {
+        display: none;
+    }
+
+    #nav {
+        display: block;
+    }
+}
+
+@media (min-width: 1025px) {
+    #sidebar-container {
+        display: none;
+    }
+
+    #nav {
+        display: block;
+    }
+}
