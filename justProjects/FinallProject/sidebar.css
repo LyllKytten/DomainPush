@@ -67,21 +67,87 @@
 }
 
 @media (max-width: 600px) {
+
+    /* Показываем сайдбар-контейнер */
     #sidebar-container {
         display: block;
-
     }
 
+    /* Скрываем стандартное меню */
     #nav {
         display: none;
     }
 
+    /* ===== Сайдбар ===== */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: -100%; /* спрятан за экраном */
+        width: 70%;
+        height: 100vh;
+        background-color: #3b3d42;
+        display: flex;
+        flex-direction: column;
+        padding: 60px 20px;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    .sidebar.active {
+        right: 0;
+    }
+
+    .sidebar a {
+        color: white;
+        font-size: 20px;
+        margin: 15px 0;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+    .sidebar a:hover {
+        color: #f0a500;
+    }
+
+    /* ===== Кнопка-гамбургер ===== */
+    .menu-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .menu-btn span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Анимация крестика */
+    .menu-btn.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    .menu-btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-btn.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* ===== Контентные блоки ===== */
     .max-width-1025 {
         flex-direction: column;
     }
 
     .max-width-1025 .title-about-text.about-text p {
-        padding: 0 15px 0 15px;
+        padding: 0 15px;
     }
 
     .project {
@@ -96,10 +162,7 @@
         margin-top: 15px;
     }
 
-    #first-crop {
-        transform: translateX(0);
-    }
-
+    #first-crop,
     #third-crop {
         transform: translateX(0);
     }
@@ -122,11 +185,11 @@
 
     .images-container {
         flex-direction: column;
-        margin: 0 15px 0 15px;
+        margin: 0 15px;
     }
 
     #imgs-container-2 {
-        margin: 0 15px 0 15px;
+        margin: 0 15px;
     }
 
     .image {
@@ -147,19 +210,8 @@
         max-height: none;
     }
 
-    #pc2 {
-        margin: 0;
-    }
-
-    #pc3 {
-        margin: 0;
-    }
-
-    #last-one-pc1 {
-        margin: 0;
-    }
-
-    #last-one-pc2 {
+    #pc2, #pc3,
+    #last-one-pc1, #last-one-pc2 {
         margin: 0;
     }
 
