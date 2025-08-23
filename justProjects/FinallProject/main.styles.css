@@ -1088,7 +1088,12 @@ h5 {
 #team {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin-top: 80px;
+}
+
+#team-p {
+    max-width: 690px;
 }
 
 .title-about-text.about-text.right-margin p {
