@@ -30,7 +30,6 @@
 
 
     document.addEventListener('mousedown', mouseDown, false);
-    document.addEventListener('mousemove', mouseMove, false);
     document.addEventListener('mouseup', mouseUp, false);
 
     let currentImage = null;
@@ -52,6 +51,8 @@
         mouseShiftY = eo.pageY - rect.top;
 
         currentImage.style.zIndex = `${++zindex}`;
+
+        document.addEventListener('mousemove', mouseMove, false);
     }
 
 
@@ -60,6 +61,7 @@
         eo.preventDefault();
 
         currentImage = null;
+        document.removeEventListener('mousemove', mouseMove, false);
     }
 
 

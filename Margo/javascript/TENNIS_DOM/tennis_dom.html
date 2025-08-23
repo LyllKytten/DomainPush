@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Теннис</title>
+</head>
+<body>
+    <input type="button" id="start" value="старт!" onclick="start()">
+    <div class="whole_game_div" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <p id="score" style="font-size: 32px; margin-bottom: 10px;"><span id="left_score">0</span>:<span id="right_score">0</span></p>
+        <div id="tennis_ground" style="position: relative; background-color: #ffed82; border: 1px solid black">
+            <div id="left_player" style="position: absolute; background-color: green"></div>
+            <div id="ball" style="position: absolute; background-color: red; border-radius: 50%;"></div>
+            <div id="right_player" style="position: absolute; background-color: blue;"></div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./tennis_dom.js" type="text/javascript" defer></script>
+</body>
+</html>
