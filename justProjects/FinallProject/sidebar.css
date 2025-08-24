@@ -36,17 +36,24 @@
 }
 
 /* Сайдбар */
+/* было */
 .sidebar {
     position: fixed;
     top: 0;
-    right: -250px; /* спрятано справа */
+    right: 0;           /* меняем с -250px на 0 */
     width: 250px;
     height: 100%;
     background: #333;
-    transition: 0.3s ease;
     padding-top: 60px;
     z-index: 1000;
+    transition: transform .3s ease;  /* анимируем transform */
+    transform: translateX(100%);     /* скрыто за правым краем без расширения страницы */
 }
+
+.sidebar.active {
+    transform: translateX(0);        /* выезжает */
+}
+
 
 .sidebar.active {
     right: 0; /* выезжает */
@@ -66,7 +73,11 @@
     color: #f7931e;
 }
 
-@media (max-width: 784px) {
+.sidebar-container {
+    position: relative;
+}
+
+@media (max-width: 783px) {
 
     .menu-btn {
         display: flex;
@@ -158,7 +169,7 @@
     }
 }
 
-@media (max-width: 784px) {
+@media (max-width: 783px) {
     .title-header {
         text-align: center;
         padding: 0 15px;
@@ -183,7 +194,7 @@
     }
 }
 
-@media (max-width: 784px) {
+@media (max-width: 783px) {
     #lets-get-in-touch {
         flex-direction: column;
         align-items: center;
@@ -210,7 +221,7 @@
 
 }
 
-@media (max-width: 784px) {
+@media (max-width: 783px) {
     .breadcrumbs {
         margin-right: 15px;
     }
@@ -264,7 +275,7 @@
     }
 }
 
-@media (max-width: 784px) {
+@media (max-width: 783px) {
     #our-services {
         flex-direction: column;
     }
@@ -319,7 +330,7 @@
     }
 }
 
-@media (max-width: 784px) {
+@media (max-width: 783px) {
     .filter-content {
         margin-left: 15px;
     }
@@ -336,6 +347,134 @@
 
     #nav {
         display: block;
+    }
+
+    #projects {
+        margin-top: 100px;
+    }
+
+    .crop #interior-design {
+        height: 308px;
+    }
+
+    .crop #engineering {
+        height: 308px;
+    }
+
+    .crop #architecture {
+        height: 308px;
+    }
+
+    .crop a {
+        margin-top: 200px;
+    }
+
+    .objects * {
+        margin-left: 30px;
+    }
+
+    .advantages .objects p {
+        margin-left: 30px;
+    }
+
+    .advantages .objects h2 {
+        margin-left: 30px;
+    }
+
+    .advantages .objects h5 {
+        margin-left: 30px;
+    }
+
+    .advantages .objects #sep2 {
+        margin-left: 30px;
+    }
+
+    #portfolio {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    #partners .title-header-text {
+        width: auto;
+    }
+
+    #pc2, #pc3 {
+        margin-left: 0;
+    }
+
+    .img-cont {
+        width: auto;
+    }
+
+    #header-container {
+        margin-left: 15px;
+    }
+
+    #lets-get-in-touch .title-header-text {
+        margin-left: 15px;
+        padding-left: 0;
+    }
+
+    .message input {
+        margin: 25px 15px 45px 15px
+    }
+
+    .message textarea {
+        margin: 25px 15px 0 15px;
+    }
+
+    .left-margin {
+        margin-left: 15px;
+    }
+
+    .right-margin {
+        margin-right: 15px;
+    }
+
+    #about-lt {
+        max-width: 28px;
+        min-width: 250px;
+    }
+
+    #about-tht {
+        margin-left: 15px;
+    }
+
+    .accordion {
+        margin-left: 15px;
+    }
+
+    .accordion-content p {
+        margin-right: 10%;
+    }
+
+    .accordion-item .accordion-content ul li {
+        padding-right: 10%;
+    }
+
+    .right-margin-30 {
+        margin-right: 15px;
+    }
+
+    .picture-of-text {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .nowrap-ip {
+        white-space: nowrap;
+    }
+
+    .card {
+        max-width: 250px;
+    }
+
+    .pricing-cards .card {
+        margin: 15px 5px;
+    }
+
+    .right {
+        margin-top: 95px;
     }
 }
 
