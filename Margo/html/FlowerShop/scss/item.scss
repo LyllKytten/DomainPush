@@ -1,5 +1,5 @@
 @import "_variables";
-@import "_base";
+//@import "_base";
 
 .product_info {
     padding: 100px 0 0 0;
@@ -175,7 +175,14 @@
 //}
 
 @media only all and (max-width: 790px) {
-    .container {width: 90% !important;}
+    .container {
+        width: 90% !important;
+        .items_control {
+            flex-direction: column-reverse;
+
+            .prev_next { text-align: right; margin-bottom: 30px;}
+        }
+    }
     .twoColsContent {
         flex-direction: column;
 
