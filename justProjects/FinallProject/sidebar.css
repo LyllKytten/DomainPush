@@ -1,0 +1,350 @@
+.menu-btn {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #f7931e;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    z-index: 1001;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu-btn span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+/* Анимация крестика */
+.menu-btn.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+.menu-btn.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Сайдбар */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* спрятано справа */
+    width: 250px;
+    height: 100%;
+    background: #333;
+    transition: 0.3s ease;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    right: 0; /* выезжает */
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    background: #444;
+    color: #f7931e;
+}
+
+@media (max-width: 784px) {
+
+    .menu-btn {
+        display: flex;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    .max-width-1025 {
+        flex-direction: column;
+    }
+
+    .max-width-1025 .title-about-text.about-text p {
+        padding: 0 15px;
+    }
+
+    .project {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .crop {
+        width: auto;
+        transition: none !important;
+        animation: none !important;
+        margin-top: 15px;
+    }
+
+    #first-crop,
+    #third-crop {
+        transform: translateX(0);
+    }
+
+    .rate {
+        display: none;
+    }
+
+    .advantages {
+        display: none;
+    }
+
+    #portfolio {
+        margin: 0 0 60px 0;
+    }
+
+    #portfolio .title-about-text #at1-2 {
+        margin: 15px 0 0 0;
+    }
+
+    .images-container {
+        flex-direction: column;
+        margin: 0 15px;
+    }
+
+    #imgs-container-2 {
+        margin: 0 15px;
+    }
+
+    .image {
+        width: 100%;
+        margin: 15px 0 0 0;
+    }
+
+    .image.last-one {
+        margin-bottom: 0;
+    }
+
+    #partners {
+        flex-direction: column;
+    }
+
+    .partners-container {
+        flex-direction: column;
+        max-height: none;
+    }
+
+    #pc2, #pc3,
+    #last-one-pc1, #last-one-pc2 {
+        margin: 0;
+    }
+
+    #header-container {
+        margin-left: 15px;
+    }
+
+    #lets-get-in-touch {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 784px) {
+    .title-header {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .title-header h2 {
+        font-size: 24px;
+        line-height: 1.2;
+        word-wrap: break-word;
+    }
+
+    .title-header p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .title-header a {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 784px) {
+    #lets-get-in-touch {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #lets-get-in-touch .message {
+        width: 80%;
+        margin-right: 15px;
+    }
+
+    #lets-get-in-touch input,
+    #lets-get-in-touch textarea {
+        width: 100% !important;
+        box-sizing: border-box;
+        margin: 10px 0;
+    }
+
+    #lets-get-in-touch .message-button {
+        width: 100%;
+        max-width: 200px;
+        margin: 20px auto 0;
+    }
+
+
+}
+
+@media (max-width: 784px) {
+    .breadcrumbs {
+        margin-right: 15px;
+    }
+
+    #about-about {
+        flex-direction: column;
+    }
+
+    #about-with-img {
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #serv-and-impmil {
+        display: none;
+    }
+
+    #team {
+        flex-direction: column;
+    }
+
+    .left-margin {
+        margin-left: 15px;
+    }
+
+    #team-p {
+        margin: 15px 15px;
+    }
+
+    #team-photos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #team-photo-start {
+        margin: 0;
+    }
+
+    #team-photo-end {
+        margin: 0;
+    }
+
+    #lets-get-in-touch .title-header-text {
+        margin-left: 15px;
+    }
+
+    #lets-get-in-touch .title-header-text {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 784px) {
+    #our-services {
+        flex-direction: column;
+    }
+
+    #os-tat p {
+        margin-left: 15px;
+    }
+
+    .left-margin-30 {
+        margin-left: 15px;
+    }
+
+    #our-services2 {
+        flex-direction: column;
+    }
+
+    .container-dispF-flexdirRow {
+        flex-direction: column;
+    }
+
+    .container-dispF-flexdirCol .container-dispF-flexdirRow {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-dispF-flexdirCol {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .os-p {
+        margin: 0 15px;
+    }
+
+    .op-p {
+        margin: 0 15px;
+    }
+
+    .pricing-cards .card {
+        margin: 15px 0;
+    }
+
+    .news-subs-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .right {
+        margin: 0;
+    }
+}
+
+@media (max-width: 784px) {
+    .filter-content {
+        margin-left: 15px;
+    }
+
+    .entry-meta {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 784px) and (max-width: 1024px) {
+    #sidebar-container {
+        display: none;
+    }
+
+    #nav {
+        display: block;
+    }
+}
+
+@media (min-width: 1025px) {
+    #sidebar-container {
+        display: none;
+    }
+
+    #nav {
+        display: block;
+    }
+}
