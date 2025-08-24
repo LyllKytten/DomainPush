@@ -24,7 +24,7 @@
     transition: 0.3s;
 }
 
-/* Анимация крестика */
+
 .menu-btn.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -35,28 +35,28 @@
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Сайдбар */
-/* было */
+
+
 .sidebar {
     position: fixed;
     top: 0;
-    right: 0;           /* меняем с -250px на 0 */
+    right: 0;           
     width: 250px;
     height: 100%;
     background: #333;
     padding-top: 60px;
     z-index: 1000;
-    transition: transform .3s ease;  /* анимируем transform */
-    transform: translateX(100%);     /* скрыто за правым краем без расширения страницы */
+    transition: transform .3s ease;  
+    transform: translateX(100%);     
 }
 
 .sidebar.active {
-    transform: translateX(0);        /* выезжает */
+    transform: translateX(0);        
 }
 
 
 .sidebar.active {
-    right: 0; /* выезжает */
+    right: 0; 
 }
 
 .sidebar a {
