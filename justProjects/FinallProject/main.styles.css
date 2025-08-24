@@ -16,6 +16,8 @@ body {
     margin: 0;
 }
 
+html, body { overflow-x: hidden; }
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -1365,8 +1367,8 @@ h5 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 606px;
-    margin-top: 134px;
+    max-height: 600px;
+    margin-top: 95px;
 }
 .right h2 {
     text-transform: uppercase;
